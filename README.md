@@ -1,39 +1,47 @@
 # aluminum-window-door-industry-research-skill
 
-閾濆悎閲戠郴缁熼棬绐楄涓氬姩鎬佽皟鐮?Skill for OpenClaw / QClaw
+铝合金系统门窗行业动态调研 Skill for OpenClaw / QClaw
 
-## 鍔熻兘
+## 功能
 
-鑷姩鍖栬皟鐮旈摑鍚堥噾绯荤粺闂ㄧ獥琛屼笟鍔ㄦ€侊紝杈撳嚭缁撴瀯鍖栨姤鍛婂埌鑵捐鏂囨。鏅鸿兘鏂囨。銆?
-## 瑙﹀彂璇?
-- /琛屼笟鍔ㄦ€乣
-- 甯垜鏁寸悊琛屼笟鍔ㄦ€乣
-- 閾濆悎閲戦棬绐楄涓氬姩鎬乣
+自动化调研铝合金系统门窗行业动态，输出结构化报告到腾讯文档智能文档。
 
-## 宸ヤ綔娴佺▼
+## 触发词
 
-1. 澶氭簮鎼滅储琛屼笟鍔ㄦ€侊紙multi-search-engine + online-search锛?2. 鎶撳彇绔炲搧缃戠珯锛坸browser锛?3. 鏁寸悊缁撴瀯鍖栨姤鍛婏紙MDX 鏍煎紡锛?4. 杈撳嚭鍒拌吘璁枃妗ｆ櫤鑳芥枃妗?
-## 鏂囦欢缁撴瀯
+- /行业动态
+- 帮我整理行业动态
+- 铝合金门窗行业动态
+
+## 工作流程
+
+1. 多源搜索行业动态（multi-search-engine + online-search）
+2. 抓取竞品网站（xbrowser）
+3. 整理结构化报告（MDX 格式）
+4. 输出到腾讯文档智能文档
+
+## 文件结构
 
 `
-鈹溾攢鈹€ SKILL.md                          # 鎶€鑳戒富鏂囦欢
-鈹溾攢鈹€ references/
-鈹?  鈹溾攢鈹€ competitor-sites.md           # 绔炲搧缃戠珯鍒楄〃
-鈹?  鈹斺攢鈹€ report-template.md           # 鎶ュ憡妯℃澘
-鈹斺攢鈹€ scripts/                          # 鑴氭湰鐩綍
+aluminum-window-door-industry-research/
+├── SKILL.md                          # 技能主文件
+├── references/
+│   ├── competitor-sites.md           # 竞品网站列表
+│   └── report-template.md           # 报告模板
+└── scripts/                          # 脚本目录
 `
 
-## 渚濊禆
+## 依赖
 
 - OpenClaw / QClaw
 - multi-search-engine
 - online-search
 - xbrowser
-- tencent-docs (鑵捐鏂囨。 MCP)
+- tencent-docs (腾讯文档 MCP)
 
-## 浣跨敤鏂瑰紡
+## 使用方式
 
-鍦?QClaw 涓彂閫佽Е鍙戣瘝鍗冲彲鑷姩鎵ц瀹屾暣璋冪爺娴佺▼銆?
+在 QClaw 中发送触发词即可自动执行完整调研流程。
+
 ## License
 
 MIT
